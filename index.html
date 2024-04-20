@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max Gains Gym</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .gym-background {
+        background-image: url('gym-background.jpg');
+        background-size: cover;
+        height: 400px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Max Gains Gym</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Supplements</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="gym-background"></div>
+
+<div class="container">
+    <h2>Membership Prices</h2>
+    <p>Check out our competitive membership prices:</p>
+    <ul>
+        <li>Basic Membership: $50/month</li>
+        <li>Gold Membership: $80/month</li>
+        <li>Platinum Membership: $100/month</li>
+    </ul>
+
+    <h2>Products</h2>
+    <div class="products">
+        <div>
+            <img src="protein.jpg" alt="Protein Powder">
+            <p>Protein Powder</p>
+        </div>
+        <div>
+            <img src="supplements.jpg" alt="Supplements">
+            <p>Supplements</p>
+        </div>
+        <div>
+            <img src="shaker.jpg" alt="Shaker Bottle">
+            <p>Shaker Bottle</p>
+        </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<footer>
+    &copy; 2022 Max Gains Gym
+</footer>
+</body>
+</html>
